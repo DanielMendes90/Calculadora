@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="calculo.js"></script>
+  </head>
+  <body>
+	<div id="calculadora">
+	  <input type="text" id="display" disabled>
+	  <button onclick="limparTela()" id="limparTela">C</button>
+	  <br>
+	  <button onclick="adicionarNumero(7)">7</button>
+	  <button onclick="adicionarNumero(8)">8</button>
+	  <button onclick="adicionarNumero(9)">9</button>
+	  <button onclick="adicionarOperacao('+')">+</button>
+	  <br>
+	  <button onclick="adicionarNumero(4)">4</button>
+	  <button onclick="adicionarNumero(5)">5</button>
+	  <button onclick="adicionarNumero(6)">6</button>
+	  <button onclick="adicionarOperacao('-')">-</button>
+	  <br>
+	  <button onclick="adicionarNumero(1)">1</button>
+	  <button onclick="adicionarNumero(2)">2</button>
+	  <button onclick="adicionarNumero(3)">3</button>
+	  <button onclick="adicionarOperacao('*')">*</button>
+	  <br>
+	  <button onclick="adicionarNumero(0)">0</button>
+	  <button onclick="adicionarOperacao('/')">/</button>
+	  <button onclick="adicionarOperacao('^')">^</button>
+	  <button onclick="calcular()">=</button>
+	</div>
+  </body>
+</html>
